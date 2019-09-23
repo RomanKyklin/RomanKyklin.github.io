@@ -4,23 +4,27 @@ li {
 
 header {
   height: 120px;
-  background: #44433e;
+  background: $colorArmadillo;
 
   .row {
     height: 100%;
   }
 }
 
-main {
-  background: #3c3c3c;
+a {
+  text-decoration: none;
+}
 
-  .main__text {
+.main {
+  background: $colorMineShaft;
+
+  &__text {
     margin: 0 auto;
     margin-top: 250px;
     text-align: center;
   }
 
-  .main__buttons {
+  &__buttons {
     margin: 0 auto;
     text-align: center;
     margin-top: 150px;
@@ -28,47 +32,71 @@ main {
   }
 }
 
-.text--uppercase {
-  text-transform: uppercase;
+.text {
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--white {
+    color: $colorWhite !important;
+  }
+
+  &--java {
+    color: $colorJava !important;
+  }
+
+  &--silver {
+    color: $colorSilver !important;
+  }
+
+  &--large {
+    font-size: $largeFontSize !important;
+  }
+
+  &--centered {
+    text-align: center;
+  }
 }
 
-.text--white {
-  color: $colorWhite;
-}
+.background {
+  &--java {
+    background: $colorJava;
+  }
 
-.text--java {
-  color: $colorJava;
-}
-
-.text--silver {
-  color: $colorSilver;
-}
-
-.text--large {
-  font-size: $largeFontSize;
-}
-
-.background--java {
-  background: $colorJava;
-}
-
-.background--mirage {
-  background: $colorMirage;
+  &--mirage {
+    background: $colorMirage;
+  }
 }
 
 .header__nav {
+  height: 100%;
+
   ul {
     display: flex;
+    height: 100%;
   }
 
   li {
     text-transform: uppercase;
     flex: 1;
-    color: $colorSilver;
     font-weight: $defaultFontWeight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+  }
+
+  a {
+    text-align: center;
+    color: $colorSilver;
   }
 
   li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid $colorJava;
+  }
+
+  li:hover a {
     color: $colorJava;
   }
 }
@@ -77,90 +105,235 @@ main {
   max-width: 1920px;
   display: flex;
   flex-direction: column;
+}
 
-  .row {
-    flex: 1;
-    display: flex;
-    width: 100%;
-  }
+.row {
+  flex: 1;
+  display: flex;
+  width: 100%;
 
-  .row--responsive {
+  &--responsive {
     flex-wrap: wrap;
   }
 
-  .row--items-centered {
+  &--centered {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--items-centered {
     align-items: center;
   }
 
-  .col {
-    flex: 1;
+  &--jusctify-center {
+    justify-items: center;
   }
 }
 
-.box--border-top-java {
-  border-top: 5px solid $colorJava;
-}
+.col {
+  flex: 1;
 
-.box--border-top-white {
-  border-top: 5px solid $colorWhite;
-}
+  &--items-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  &-1 {
+    flex-basis: 10%;
+  }
+
+  &-2 {
+    flex-basis: 20%;
+  }
+
+  &-3 {
+    flex-basis: 30%;
+  }
+
+  &-4 {
+    flex-basis: 40%;
+  }
+
+  &-5 {
+    flex-basis: 50%;
+  }
+
+  &-6 {
+    flex-basis: 60%;
+  }
+
+  &-7 {
+    flex-basis: 70%;
+  }
+
+  &-8 {
+    flex-basis: 80%;
+  }
+
+  &-9 {
+    flex-basis: 90%;
+  }
+
+  &-10 {
+    flex-basis: 100%;
+  }
+}
 
 .box {
   height: 400px;
   display: flex;
 
-  .box__content {
+  &--border-top-white {
+    border-top: 5px solid $colorWhite;
+  }
+
+  &--border-top-java {
+    border-top: 5px solid $colorJava;
+  }
+
+  &__content {
     flex: 1;
     align-self: center;
     text-align: center;
   }
 
-  .box__content img {
+  &__content img {
     padding-bottom: 50px;
   }
 }
 
+.lines {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 
-.row {
-  .col-1 {
-    flex-basis: 10%;
+  &__first_line {
+    width: 76px;
+    height: 1px;
+    background-color: $colorJava;
   }
 
-  .col-2 {
-    flex-basis: 20%;
-  }
-
-  .col-3 {
-    flex-basis: 30%;
-  }
-
-  .col-4 {
-    flex-basis: 40%;
-  }
-
-  .col-5 {
-    flex-basis: 50%;
-  }
-
-  .col-6 {
-    flex-basis: 60%;
-  }
-
-  .col-7 {
-    flex-basis: 70%;
-  }
-
-  .col-8 {
-    flex-basis: 80%;
-  }
-
-  .col-9 {
-    flex-basis: 90%;
-  }
-
-  .col-10 {
-    flex-basis: 100%;
+  &__second_line {
+    width: 76px;
+    height: 1px;
+    background-color: $colorJava;
+    margin-top: 3px;
+    margin-left: 25px;
   }
 }
+
+.features {
+  &__blocks {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__block {
+    flex-basis: 30%;
+    margin: 15px;
+  }
+
+  &__block__title {
+    color: $colorGrey;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  &__block__title:hover {
+    color: $colorJava;
+    cursor: pointer;
+  }
+
+  &__block__text {
+    color: $colorGrey;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px
+  }
+}
+
+
+.features__title {
+  margin-top: 100px;
+
+  &__h1 {
+    color: #4e4e4e;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+.features__block .col-1 {
+  margin-right: 25px;
+}
+
+.features .row--items-centered {
+  margin-bottom: 25px;
+}
+
+.about_company {
+  background: black;
+  margin-top: 100px;
+
+  &__title {
+    margin-top: 100px;
+  }
+
+  &__title h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 40px;
+  }
+
+  &__skills {
+    margin-top: 65px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+
+  &__skill {
+    width: 80%;
+    height: 39px;
+    border-radius: 4px;
+    background-color: #9c5da5;
+  }
+}
+
+.about_company__nav {
+  color: white;
+  margin-top: 85px;
+  width: 100%;
+
+  &__ul {
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  &__li {
+    margin: 10px;
+    text-transform: uppercase;
+  }
+
+  &__li:hover {
+    color: $colorJava;
+    border-top: 1px solid $colorJava;
+    cursor: pointer;
+  }
+}
+
+
+
+
+

@@ -1,91 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <title>Title</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="row row--responsive row--items-centered">
-          <div class="col">
-            <h1>Logo</h1>
-          </div>
-          <div class="col">
-            <nav class="header__nav">
-              <ul>
-                <li>das</li>
-                <li>dada</li>
-                <li>dada</li>
-                <li>dada</li>
-                <li>dada</li>
-                <li>dada</li>
-                <li>dada</li>
-                <li>dada</li>
-                <li>dada</li>
-              </ul>
-            </nav>
-          </div>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="row row--responsive">
+            <div class="col-3">
+                <h1>Logo</h1>
+            </div>
+            <div class="col-7">
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">skills</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">work</a></li>
+                        <li><a href="#">testimonial</a></li>
+                        <li><a href="#">blog team</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><img src="images/search_icon.png"></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </header>
-      <main class="main">
+    </header>
+    <main class="main">
         <div class="row">
-          <div class="main__text">
-            <h1 class="text--uppercase text--white">
-              The ham in <span class="text--java">wordpress theme</span>
-            </h1>
-            <h1 class="text--uppercase text--white text--large">
-              We are creative
-            </h1>
-            <h1 class="text--silver">
-              Just buy and enjoy these awesome features
-            </h1>
-          </div>
+            <div class="main__text">
+                <h1 class="text--uppercase text--white">
+                    The ham in <span class="text--java">wordpress theme</span>
+                </h1>
+                <h1 class="text--uppercase text--white text--large">
+                    We are creative
+                </h1>
+                <h1 class="text--silver">
+                    Just buy and enjoy these awesome features
+                </h1>
+            </div>
         </div>
         <div class="row">
-          <div class="col">
-            <div class="main__buttons">
-              <button class="c-btn c-btn--green">Explore now</button>
-              <button class="c-btn c-btn--blue">Purchase now</button>
-            </div>
-          </div>
-        </div>
-      </main>
-      <div class="row row--responsive">
-        <div class="col">
-          <div class="box box--border-top-java background--mirage">
-            <div class="box__content">
-              <img src="images/02_Creative-One-Page.png" />
-              <h3 class="text--java text--uppercase">Different theme option</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="box box--border-top-white background--java">
-            <div class="box__content">
-              <img src="images/03_Creative-One-Page.png" />
-              <h3 class="text--white text--uppercase">Fully customizable</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="box box--border-top-java background--mirage">
-                <div class="box__content">
-                    <img src="images/04_Creative-One-Page.png" />
-                    <h3 class="text--java text--uppercase">Unlimited support</h3>
+            <div class="col">
+                <div class="main__buttons">
+                    <button class="c-btn c-btn--green">Explore now</button>
+                    <button class="c-btn c-btn--blue">Purchase now</button>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="box box--border-top-white background--java">
-                <div class="box__content">
-                    <img src="images/05_Creative-One-Page.png" />
-                    <h3 class="text--white text--uppercase">Responsive all devices</h3>
+    </main>
+    <!--   Start section   -->
+    <section>
+        <div class="row row--responsive">
+            <div class="col">
+                <div class="box box--border-top-java background--mirage">
+                    <div class="box__content">
+                        <img src="images/02_Creative-One-Page.png"/>
+                        <h3 class="text--java text--uppercase">
+                            Different theme option
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box box--border-top-white background--java">
+                    <div class="box__content">
+                        <img src="images/03_Creative-One-Page.png"/>
+                        <h3 class="text--white text--uppercase">Fully customizable</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box box--border-top-java background--mirage">
+                    <div class="box__content">
+                        <img src="images/04_Creative-One-Page.png"/>
+                        <h3 class="text--java text--uppercase">Unlimited support</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box box--border-top-white background--java">
+                    <div class="box__content">
+                        <img src="images/05_Creative-One-Page.png"/>
+                        <h3 class="text--white text--uppercase">
+                            Responsive all devices
+                        </h3>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </section>
+    <!-- End section -->
+
+    <!--   Start section   -->
+    <section class="features">
+        <div class="row row--responsive row--centered">
+            <div class="col-8">
+                <div class="features__title">
+                    <h1 class="features__title__h1">
+                        Creating Amazing Features
+                    </h1>
+                </div>
+
+                <div class="lines">
+                    <div class="lines__first_line"></div>
+                    <div class="lines__second_line"></div>
+                </div>
+
+                <div class="features__blocks">
+                    <div class="features__block">
+                        <div class="row row--items-centered">
+                            <div class="col-1">
+                                <img class="features__block__img" src="images/Forma_1.png">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="features__block__title">
+                                    Retina Ready
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="features__block__text">
+                                    All our modules are built with the possi bility to thse choose between different
+                                    design and
+                                    you change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__block">
+                        <div class="row row--items-centered">
+                            <div class="col-1">
+                                <img class="features__block__img" src="images/Forma_2.png">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="features__block__title">
+                                    Creative Blog Style
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="features__block__text">
+                                    All our modules are built with the possi bility to thse choose between different
+                                    design and you change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__block">
+                        <div class="row row--items-centered">
+                            <div class="col-1">
+                                <img class="features__block__img" src="images/Forma_3.png">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="features__block__title">
+                                    Icon Fonts
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="features__block__text">
+                                    All our modules are built with the possi bility to thse choose between different
+                                    design and you change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__block">
+                        <div class="row row--items-centered">
+                            <div class="col-1">
+                                <img class="features__block__img" src="images/Forma_4.png">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="features__block__title">
+                                    Parallax Effects
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="features__block__text">
+                                    All our modules are built with the possi bility to thse choose between different
+                                    design and you change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__block">
+                        <div class="row row--items-centered">
+                            <div class="col-1">
+                                <img class="features__block__img" src="images/Forma_5.png">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="features__block__title">
+                                    Parallax Effects
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="features__block__text">
+                                    All our modules are built with the possi bility to thse choose between different
+                                    design and you change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__block">
+                        <div class="row row--items-centered">
+                            <div class="col-1">
+                                <img class="features__block__img" src="images/Forma_6.png">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="features__block__title">
+                                    Parallax Effects
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="features__block__text">
+                                    All our modules are built with the possi bility to thse choose between different
+                                    design and you change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__block">
+                        <div class="row row--items-centered">
+                            <div class="col-1">
+                                <img class="features__block__img" src="images/Forma_7.png">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="features__block__title">
+                                    Parallax Effects
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="features__block__text">
+                                    All our modules are built with the possi bility to thse choose between different
+                                    design and you change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__block">
+                        <div class="row row--items-centered">
+                            <div class="col-1">
+                                <img class="features__block__img" src="images/Forma_8.png">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="features__block__title">
+                                    Parallax Effects
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="features__block__text">
+                                    All our modules are built with the possi bility to thse choose between different
+                                    design and you change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__block">
+                        <div class="row row--items-centered">
+                            <div class="col-1">
+                                <img class="features__block__img" src="images/Forma_9.png">
+                            </div>
+                            <div class="col-9">
+                                <h1 class="features__block__title">
+                                    Parallax Effects
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="features__block__text">
+                                    All our modules are built with the possi bility to thse choose between different
+                                    design and you change.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+
+    <!--   Start section   -->
+    <section class="about_company">
+        <div class="row">
+            <div class="col">
+                <div class="row row--responsive" style="height: 100%">
+                    <div class="col-10"></div>
+                    <div class="col-4" style="background: grey"></div>
+                    <div class="col-6"></div>
+                    <div class="col-7" style="background: grey"></div>
+                    <div class="col-3"></div>
+                    <div class="col-10" style="background: grey"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="about_company__title">
+                    <h1 class="text--centered">About Our Company</h1>
+                </div>
+                <div class="lines">
+                    <div class="lines__first_line"></div>
+                    <div class="lines__second_line"></div>
+                </div>
+
+                <nav class="about_company__nav">
+                    <ul class="about_company__nav__ul">
+                        <li class="about_company__nav__li">our history</li>
+                        <li class="about_company__nav__li">our biography</li>
+                        <li class="about_company__nav__li">our skills</li>
+                    </ul>
+                </nav>
+
+                <div class="about_company__skills">
+                    <div class="about_company__skill">
+                        Skill
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+</div>
+</body>
 </html>
