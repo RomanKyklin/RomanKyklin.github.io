@@ -60,11 +60,11 @@ a {
 
 .background {
   &--java {
-    background: $colorJava;
+    background: $colorJava!important;
   }
 
   &--mirage {
-    background: $colorMirage;
+    background: $colorMirage!important;
   }
 }
 
@@ -200,6 +200,7 @@ a {
 
   &__content img {
     padding-bottom: 50px;
+    height: 130px;
   }
 }
 
@@ -208,7 +209,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 
   &__first_line {
     width: 76px;
@@ -254,10 +254,9 @@ a {
     color: $colorGrey;
     font-size: 14px;
     font-weight: 300;
-    line-height: 25px
+    line-height: 25px;
   }
 }
-
 
 .features__title {
   margin-top: 100px;
@@ -268,6 +267,32 @@ a {
     font-weight: 400;
     line-height: 40px;
     text-align: center;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 76px;
+    overflow: hidden;
+    left: calc(50% - 40px);
+    z-index: 2;
+    height: 1px;
+    background-color: $colorJava;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 76px;
+    overflow: hidden;
+    left: calc(50% - 55px);
+    z-index: 2;
+    height: 1px;
+    top: 1620px;
+
+    background-color: $colorJava;
   }
 }
 
@@ -294,8 +319,8 @@ a {
     line-height: 40px;
   }
 
-  &__skills {
-    margin-top: 65px;
+  &_skills {
+    margin-top: 55px;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -306,7 +331,48 @@ a {
     width: 80%;
     height: 39px;
     border-radius: 4px;
-    background-color: #9c5da5;
+    background-color: black;
+    border: 1px solid #959595;
+    margin-top: 15px;
+  }
+
+  &__skill--pink {
+    width: 80%;
+    height: 100%;
+    background: $colorTrendyPink;
+  }
+
+  &__skill--cerulean {
+    width: 90%;
+    height: 100%;
+    background: $colorCerulean;
+  }
+
+  &__skill--new-york-pink {
+    width: 60%;
+    height: 100%;
+    background: $colorNewYorkPink;
+  }
+
+  &__skill--green {
+    width: 95%;
+    height: 100%;
+    background: $colorMountainMeadow;
+  }
+
+  &__skill--orange {
+    width: 75%;
+    height: 100%;
+    background: $colorOrange;
+  }
+
+  &-skill__text {
+    margin-left: 15px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
   }
 }
 
@@ -320,7 +386,9 @@ a {
     margin-left: 0;
     justify-content: center;
   }
+}
 
+.about_company-nav {
   &__li {
     margin: 10px;
     text-transform: uppercase;
@@ -333,7 +401,69 @@ a {
   }
 }
 
+.work {
+  border: 1px solid #e1e1e1;
+  background-color: #f8fcfe;
+  padding-bottom: 100px;
 
+  &__title {
+    color: $colorTundora;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 100px;
+  }
 
+  &__nav {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
 
+  &-nav__ul {
+    height: 58px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+  }
 
+  &-nav__li {
+    align-self: center;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #717171;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 42px;
+    background: white;
+    border: 1px solid #ebebeb;
+    border-right: none;
+  }
+
+  &-nav__li:last-child {
+    border-right: 1px solid #ebebeb;
+  }
+
+  &-nav__li:hover {
+    border-top: 1px solid $colorJava;
+    color: $colorJava;
+    cursor: pointer;
+  }
+
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    height: 208px;
+    background: $colorGrey;
+    flex-basis: 25%;
+  }
+
+  &__buttons {
+    margin-top: 75px;
+    text-align: center;
+  }
+
+}
