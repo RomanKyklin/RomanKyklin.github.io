@@ -60,11 +60,11 @@ a {
 
 .background {
   &--java {
-    background: $colorJava!important;
+    background: $colorJava !important;
   }
 
   &--mirage {
-    background: $colorMirage!important;
+    background: $colorMirage !important;
   }
 }
 
@@ -233,7 +233,7 @@ a {
   }
 
   &__block {
-    flex-basis: 30%;
+    flex-basis: 29%;
     margin: 15px;
   }
 
@@ -406,6 +406,17 @@ a {
   background-color: #f8fcfe;
   padding-bottom: 100px;
 
+  &__button {
+    font-size: 14px !important;
+    line-height: 42px !important;
+    font-weight: 700 !important;
+  }
+
+  &__button img {
+    margin-right: 15px;
+    margin-bottom: 2px;
+  }
+
   &__title {
     color: $colorTundora;
     font-size: 36px;
@@ -465,5 +476,102 @@ a {
     margin-top: 75px;
     text-align: center;
   }
+}
 
+.services {
+  &__title {
+    color: $colorTundora;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 110px;
+  }
+
+  &__title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 76px;
+    overflow: hidden;
+    left: calc(50% - 40px);
+    z-index: 2;
+    height: 1px;
+    top: 4430px;
+    background-color: $colorJava;
+  }
+
+  &__title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 76px;
+    overflow: hidden;
+    left: calc(50% - 25px);
+    z-index: 2;
+    height: 1px;
+    top: 4435px;;
+
+    background-color: $colorJava;
+  }
+
+  &-nav__ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  &-nav__ul li {
+    width: 192px;
+    height: 73px;
+    border: 1px solid #ebebeb;
+    background-color: #f8fcfe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-nav__ul li:hover {
+    background-color: $colorJava;
+    cursor: pointer;
+  }
+
+  &-nav__ul li:hover a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 39.02px;
+  }
+
+  &-nav__ul a {
+    color: #717171;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 39.02px;
+  }
+
+  &-nav__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-nav-content__text {
+    width: 926px;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.39px;
+    height: 140px;
+  }
+
+  &-nav-content__img {
+    width: 194px;
+    height: 140px;
+    background-color: #797979;
+    margin-right: 20px;
+  }
 }
