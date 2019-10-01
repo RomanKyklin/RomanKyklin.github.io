@@ -156,13 +156,17 @@ $btn-ghost-border-width: 2px;
 .c-btn--green {
   color: $colorWhite;
   text-transform: uppercase;
-  font-weight: $defaultFontWeight;
   background-image: linear-gradient(0deg, $colorJava 95%, white 5%);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 31.83px;
 }
 
 .c-btn--blue {
   color: $colorWhite;
   text-transform: uppercase;
-  font-weight: $defaultFontWeight;
   background-image: linear-gradient(0deg, $colorBrightTurquoise 95%, white 5%);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 31.83px;
 }
