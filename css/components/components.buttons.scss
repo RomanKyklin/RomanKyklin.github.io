@@ -26,6 +26,7 @@
   padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
   transition: $global-transition;
   border-radius: $global-radius;
+  border: none;
 }
 
 /* Style variants
@@ -160,6 +161,26 @@ $btn-ghost-border-width: 2px;
   font-size: 13px;
   font-weight: 700;
   line-height: 31.83px;
+}
+
+.c-btn--mirage {
+  border-radius: 3px;
+  background-color: $colorMirage;
+  color: $colorWhite;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 172px;
+}
+
+.c-btn--java {
+  border-radius: 3px;
+  background-color: $colorJava;
+  color: $colorWhite;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 172px;
 }
 
 .c-btn--blue {
