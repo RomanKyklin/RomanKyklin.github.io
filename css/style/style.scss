@@ -1139,7 +1139,8 @@ p {
   }
 
   &-profile-social__icon {
-    width: 66px;
+    max-width: 66px;
+    width: 100%;
     background: $colorMirage;
     border-right: 0.1px solid white;
     border-top: 0.1px solid white;
